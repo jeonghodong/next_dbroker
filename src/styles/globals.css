@@ -12,6 +12,34 @@
   .Section4_span_border {
     @apply border-[1.5px] border-solid border-black py-[1rem] px-[2rem] mb-[2rem] rounded-full;
   }
+  @keyframes moveLeft {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-20%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes moveRight {
+    0% {
+      transform: translateX(-20%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-20%);
+    }
+  }
+  .Section3_animation-move-left {
+    animation: moveLeft 15s infinite;
+  }
+  .Section3_animation-move-Right {
+    animation: moveRight 15s infinite;
+  }
 }
 
 html {

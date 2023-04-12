@@ -28,16 +28,22 @@ export default function Section6() {
   return (
     <div className="w-[100%] h-[100%] bg-[#222] text-white py-[8rem]">
       <div className="pl-[5rem] flex flex-col">
-        <span className="text-[4rem] font-black">
+        <span data-aos="fade-left" className="text-[4rem] font-black">
           수수료 ZERO ! 누구나 참여하고,
           <br /> 최신 작품을 쉽고 빠르게 공유하세요
           <br /> 학생, 청년, 로컬 디자이너에게
           <br /> 디자인 활동을 지원하고 있습니다
         </span>
-        <span className="mt-[2rem] px-[3rem] font-bold py-[1rem] bg-white text-center text-black rounded-2xl w-[40vw]">
+        <span
+          data-aos="fade-left"
+          className="mt-[2rem] px-[3rem] font-bold py-[1rem] bg-white text-center text-black rounded-2xl w-[40vw]"
+        >
           2022년 두번째 프로젝트를 <span className="text-orange-500">수상작 14인의 아티스트</span>를 만나보세요 !
         </span>
-        <span className="text-[1.5rem] w-[150px] mt-[10rem] rounded-full px-[.5rem] py-[.5rem] text-center border border-white border-solid cursor-pointer">
+        <span
+          data-aos="fade-left"
+          className="text-[1.5rem] w-[150px] mt-[10rem] rounded-full px-[.5rem] py-[.5rem] text-center border border-white border-solid cursor-pointer"
+        >
           계정만들기
         </span>
       </div>

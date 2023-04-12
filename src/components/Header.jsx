@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div
       className={
-        "bg-[#ffffff29] fixed top-0 left-0 z-9999 w-screen flex justify-around items-center p-4 backdrop-filter backdrop-blur-[5px] opacity-[50]"
+        "bg-[#ffffff29] fixed top-0 left-0 z-[9998] w-screen flex justify-around items-center p-4 backdrop-filter backdrop-blur-[5px] opacity-[50]"
       }
     >
       <Image src={logo} alt="logo image" width={220} height={220} />
