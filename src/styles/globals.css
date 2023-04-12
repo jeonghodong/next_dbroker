@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .Hspan {
+    @apply text-[1.5rem];
+  }
+  .Section4_span {
+    @apply flex flex-col text-[50px];
+  }
+  .Section4_span_border {
+    @apply border-[1.5px] border-solid border-black py-[1rem] px-[2rem] mb-[2rem] rounded-full;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
