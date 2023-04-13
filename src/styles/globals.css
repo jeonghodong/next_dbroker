@@ -12,6 +12,12 @@
   .Section4_span_border {
     @apply border-[1.5px] border-solid border-black py-[1rem] px-[2rem] mb-[2rem] rounded-full;
   }
+  .wirte_text {
+    @apply w-[700px] p-[1rem] border border-gray-400 border-solid;
+  }
+  .wirte_type {
+    @apply cursor-pointer text-[1.4rem] border-black border-solid;
+  }
   @keyframes moveLeft {
     0% {
       transform: translateX(0);
