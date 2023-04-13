@@ -1,8 +1,19 @@
 import Image from "next/image";
 import logo from "/public/images/logo.png";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [login, setLogin] = useState(false);
+
+  useEffect(() => {
+    console.log(login);
+  }, [login]);
+
+  const handleLoginClick = () => {
+    setLogin((v) => !v);
+  };
+
   return (
     <div
       className={
@@ -29,7 +40,12 @@ export default function Header() {
         placeholder="어떤 디자인 필요하세요?"
       />
       <div>
-        <span className="px-[1rem] cursor-pointer py-[.5rem] rounded-xl text-white bg-black mr-[1rem]">로그인</span>
+        <span
+          onClick={handleLoginClick}
+          className="px-[1rem] cursor-pointer py-[.5rem] rounded-xl text-white bg-black mr-[1rem]"
+        >
+          로그인{String(login)}
+        </span>
         <span className="px-[1rem] cursor-pointer py-[.5rem] rounded-xl text-black bg-gray-200 ">회원가입</span>
       </div>
     </div>

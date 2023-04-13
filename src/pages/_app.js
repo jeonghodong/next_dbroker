@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Layout from './Layout';
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -13,5 +14,8 @@ export default function App({ Component, pageProps }) {
       once: false
     });
   }, []);
-  return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>)
 }
