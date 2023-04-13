@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Layout from './Layout';
+import { RecoilRoot } from 'recoil';
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -15,7 +16,9 @@ export default function App({ Component, pageProps }) {
     });
   }, []);
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>)
+    <RecoilRoot>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </RecoilRoot>)
 }

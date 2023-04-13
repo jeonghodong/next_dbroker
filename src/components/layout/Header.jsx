@@ -1,17 +1,20 @@
 import Image from "next/image";
 import logo from "/public/images/logo.png";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useRecoilState } from "recoil";
+import { loginState } from "@/recoil/atoms/loginState";
 
 export default function Header() {
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useRecoilState(loginState);
 
   useEffect(() => {
     console.log(login);
   }, [login]);
 
-  const handleLoginClick = () => {
-    setLogin((v) => !v);
+  const handleLoginClick = (v) => {
+    if (v.target.innerText === "로그인") setLogin(true);
+    if (v.target.innerText === "로그아웃") setLogin(false);
   };
 
   return (
@@ -39,12 +42,15 @@ export default function Header() {
         type="text"
         placeholder="어떤 디자인 필요하세요?"
       />
+      {login && (
+        <span className="px-[1rem] cursor-pointer py-[.5rem] rounded-xl text-black bg-gray-200 ">내 작품 보여주기</span>
+      )}
       <div>
         <span
-          onClick={handleLoginClick}
+          onClick={(v) => handleLoginClick(v)}
           className="px-[1rem] cursor-pointer py-[.5rem] rounded-xl text-white bg-black mr-[1rem]"
         >
-          로그인{String(login)}
+          {login ? "로그아웃" : "로그인"}
         </span>
         <span className="px-[1rem] cursor-pointer py-[.5rem] rounded-xl text-black bg-gray-200 ">회원가입</span>
       </div>
