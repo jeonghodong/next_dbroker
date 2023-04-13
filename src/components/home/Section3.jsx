@@ -16,15 +16,6 @@ export default function Section3() {
           </span>
         </div>
       </div>
-      <div className="z-[10000]  mb-[3rem] flex items-center w-[110%] relative left-[-5%] h-[85px] bg-orange-500 rotate-[350deg] text-white text-[1.5rem] whitespace-nowrap drop-shadow-md">
-        <span className="Section3_animation-move-left">
-          전 세계 유저가 당신의 디자인에 관심을 가질 수 있도록 기회를 제공해보세요. 전 세계 유저가 당신의 디자인에
-          관심을 가질 수 있도록 기회를 제공해보세요. 전 세계 유저가 당신의 디자인에 관심을 가질 수 있도록 기회를
-          제공해보세요. 전 세계 유저가 당신의 디자인에 관심을 가질 수 있도록 기회를 제공해보세요. 전 세계 유저가 당신의
-          디자인에 관심을 가질 수 있도록 기회를 제공해보세요. 전 세계 유저가 당신의 디자인에 관심을 가질 수 있도록
-          기회를 제공해보세요.
-        </span>
-      </div>
       <div className="flex items-center w-[110%] relative left-[-5%] h-[85px] bg-white  text-black text-[1.5rem] whitespace-nowrap drop-shadow-md">
         <span className="Section3_animation-move-Right">
           Happy 😀 Freedom 😎 Help 😊 Happy 😀 Freedom 😎 Help 😊 Happy 😀 Freedom 😎 Help 😊 Happy 😀 Freedom 😎 Help

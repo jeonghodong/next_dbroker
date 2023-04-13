@@ -24,7 +24,7 @@ export default function Header() {
         </span>
       </div>
       <input
-        className="border rounded-xl px-[1rem] py-[.3rem] outline-none placeholder:text-[1rem]"
+        className="border rounded-xl px-[1rem] py-[.3vw] outline-none w-[12vw] text-center placeholder:text-[.8vw]"
         type="text"
         placeholder="어떤 디자인 필요하세요?"
       />

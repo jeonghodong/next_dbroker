@@ -4,7 +4,7 @@
 
 @layer components {
   .Hspan {
-    @apply text-[1.5rem] cursor-pointer font-bold;
+    @apply text-[1.5vw] cursor-pointer font-bold;
   }
   .Section4_span {
     @apply flex flex-col text-[50px];
