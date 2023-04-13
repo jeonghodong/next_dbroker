@@ -4,17 +4,23 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { loginState } from "@/recoil/atoms/loginState";
+import { useRouter } from "next/router";
 
 export default function Header() {
   const [login, setLogin] = useRecoilState(loginState);
-
+  const router = useRouter();
   useEffect(() => {
     console.log(login);
   }, [login]);
 
   const handleLoginClick = (v) => {
-    if (v.target.innerText === "로그인") setLogin(true);
-    if (v.target.innerText === "로그아웃") setLogin(false);
+    if (v.target.innerText === "로그인") {
+      setLogin(true);
+    }
+    if (v.target.innerText === "로그아웃") {
+      setLogin(false);
+      router.push("/");
+    }
   };
 
   return (
@@ -43,7 +49,9 @@ export default function Header() {
         placeholder="어떤 디자인 필요하세요?"
       />
       {login && (
-        <span className="px-[1rem] cursor-pointer py-[.5rem] rounded-xl text-black bg-gray-200 ">내 작품 보여주기</span>
+        <span className="px-[1rem] cursor-pointer py-[.5rem] rounded-xl text-black border border-black border-solid">
+          <Link href="/write">내 작품 보여주기</Link>
+        </span>
       )}
       <div>
         <span
