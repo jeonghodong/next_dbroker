@@ -3,7 +3,7 @@ export default function Section3() {
     <>
       <div className="w-[100%] h-[100%] bg-[#222] text-white">
         <div data-aos="fade-right" className="p-[8rem] flex flex-col">
-          <span className="text-[4vw] font-black ">
+          <span className="text-[4vw] font-black leading-[5vw]">
             디자이너의,
             <br /> Happy 😀 Freedom 😎 Help 🥹 위해,
             <br /> 브로커가 만났습니다 !<br /> 세상 아름다운 조합, 커네팅
