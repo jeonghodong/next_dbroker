@@ -3,11 +3,9 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="w-full h-full bg-[#333] py-[2rem]">
-      <div className="flex flex-col justify-center items-center text-white">
-        <div className="flex">
-          <span className="cursor-pointer mr-[1rem]">개인정보처리방침</span>
-          <span className="cursor-pointer">이용약관</span>
-        </div>
+      <div className="flex gap-y-[.5rem] relative flex-col justify-center items-center text-white">
+        <span className="cursor-pointer">개인정보처리방침</span>
+        <span className="cursor-pointer">이용약관</span>
         <span>커네팅</span>
         <span className="font-normal">
           대표 <span className="font-light">홍길동</span>

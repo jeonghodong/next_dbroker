@@ -2,9 +2,9 @@ export default function Section5() {
   return (
     <div className="w-[100%] h-[100%] py-[10rem] pl-[6rem] bg-white flex flex-col">
       <span data-aos="fade-left" className="text-[4.5rem] font-black mb-[5rem]">
-        커커네팅 X 디자인브로커
+        커네팅 X 디자인브로커
       </span>
-      <span data-aos="fade-left" className="w-[60vw] text-[2rem] font-light">
+      <span data-aos="fade-left" className="w-[60vw] text-[2rem] font-light leading-[3rem]">
         디자이너를 꿈꾸는 학생, 청년의 감각적인 디자인을 자유롭게 창작할 수 있도록 지원하고,
         <br /> 전 세계 사용자의 관심을 기대할 수 있는 공간입니다.
         <br />

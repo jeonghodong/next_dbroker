@@ -23,7 +23,11 @@ export default function Header() {
           <Link href="/ask">서비스 질문</Link>
         </span>
       </div>
-      <input className="border rounded-full px-[1rem] py-[.5rem]" type="text" placeholder="어떤 디자인 필요하세요?" />
+      <input
+        className="border rounded-xl px-[1rem] py-[.3rem] outline-none placeholder:text-[1rem]"
+        type="text"
+        placeholder="어떤 디자인 필요하세요?"
+      />
       <div>
         <span className="px-[1rem] cursor-pointer py-[.5rem] rounded-xl text-white bg-black mr-[1rem]">로그인</span>
         <span className="px-[1rem] cursor-pointer py-[.5rem] rounded-xl text-black bg-gray-200 ">회원가입</span>

@@ -1,3 +1,3 @@
 export default function index() {
-  return <div>포폴게시물</div>;
+  return <div className="h-screen pt-[5rem]">작업물페이지</div>;
 }

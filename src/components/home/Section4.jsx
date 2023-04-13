@@ -1,6 +1,6 @@
 export default function Section4() {
   return (
-    <div className="w-[100%] h-[100%] rounded-t-[5rem] bg-[#f1f1f1] flex justify-between items-center py-[5rem] pt-[5rem]">
+    <div className="w-[100%] h-[100%] relative rounded-t-[5rem] bg-[#f1f1f1] flex justify-between items-center py-[5rem] pt-[5rem]">
       <div className="Section4_span items-baseline pl-[1rem]">
         <span data-aos="fade-right" className="Section4_span_border">
           안녕! :D
@@ -39,15 +39,19 @@ export default function Section4() {
           おはようございます
         </span>
       </div>
-      <div className="absolute left-[33%] flex flex-col text-center items-center">
+      <div className="absolute left-[50%] translate-x-[-50%] flex flex-col text-center items-center">
         <span data-aos="fade-in" className="mb-[5rem] text-[5rem] font-black">
           디자이너라면?
         </span>
         <span data-aos="fade-in" className="text-center text-[1.7rem] font-light">
           나를 위한 컨텐츠를,
+          <br />
           <br /> 창작 😎
+          <br />
           <br /> 공유 😆
+          <br />
           <br /> 소통 🥰
+          <br />
           <br /> 전문 디자이너를 폼나게 소개해볼게요
         </span>
         <span
